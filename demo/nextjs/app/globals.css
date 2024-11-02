@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	color: #ededed;
+	background: #0a0a0a;
+	padding-bottom: 4rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+	margin: 4rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 1rem 4rem;
+}
+
+p {
+	margin: 1rem 4rem;
+}

@@ -51,7 +51,7 @@ npm install react-streaming-availability
 The `Row` component displays a row of movies or TV shows.
 
 ```tsx
-import { Row } from 'react-streaming-availability';
+import { Row, newTopShowsSource } from 'react-streaming-availability';
 
 export default function MyComponent() {
   return (
@@ -73,7 +73,7 @@ export default function MyComponent() {
 The `Grid` component displays a grid of movies or TV shows.
 
 ```tsx
-import { Grid } from 'react-streaming-availability';
+import { Grid, newFilteredSearchSource } from 'react-streaming-availability';
 
 export default function MyComponent() {
 	return (
