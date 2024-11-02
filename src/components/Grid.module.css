@@ -1,0 +1,25 @@
+.root {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: calc(1rem + 1vw);
+    justify-content: space-between;
+    align-items: center;
+    justify-items: stretch;
+    padding: calc(1rem + 1vw);
+}
+
+.root > * {
+    flex-basis: calc(10rem + 10%);
+    max-width: calc(20rem + 20%);
+    flex-grow: 1;
+}
+
+.poster-root {
+    width: auto;
+}
+
+.poster-image {
+    height: auto;
+    width: 100%;
+}

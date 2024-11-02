@@ -1,0 +1,60 @@
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.arrow-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.arrow {
+    border-radius: 2rem;
+}
+
+.arrow-enabled {
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgb(31, 41, 55);
+}
+
+.arrow-enabled:hover {
+    background-color: rgb(55, 65, 81);
+}
+
+.arrow-enabled:active {
+    background-color: rgb(75, 85, 99);
+}
+
+.arrow-disabled {
+    background-color: rgb(0, 0, 0);
+    height: 2rem;
+    width: 2rem;
+    margin: 0.25rem;
+}
+
+.poster-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}

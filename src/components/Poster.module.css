@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    gap: calc(0.25rem + 0.1vw);
+    padding-bottom: calc(0.25rem + 0.1vw);
+    width: max-content;
+    flex-shrink: 0;
+}
+
+.container:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.container:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.poster {
+    object-fit: contain;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.poster-horizontal {
+    height: calc(8rem + 4vw);
+}
+
+.poster-vertical {
+    height: calc(12rem + 6vw);
+}
+
+.logo {
+    object-fit: contain;
+    height: calc(2.5rem + 0.5vw);
+}
+
+.text {
+    font-size: calc(1rem + 0.1vw);
+    white-space: pre-wrap;
+    text-align: center;
+}

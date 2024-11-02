@@ -1,0 +1,38 @@
+{
+  "name": "react-streaming-availability",
+  "version": "0.1.0",
+  "description": "A React component library to display streaming availability data for movies and TV shows including deep links",
+  "homepage": "https://github.com/movieofthenight/react-streaming-availability",
+  "bugs": {
+    "url": "https://github.com/movieofthenight/react-streaming-availability/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Cevat Barış Yılmaz"
+  },
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "repository": "github:movieofthenight/react-streaming-availability",
+  "scripts": {
+    "build": "tsc && npm run copy-css && typedoc",
+    "clean": "rm -rf dist && rm -rf docs",
+    "prepare": "npm run clean && npm run build",
+    "copy-css": "copyfiles -u 1 src/**/*.css dist/"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "server-only": "^0.0.1",
+    "streaming-availability": "^4.4.0"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.4",
+    "@types/react": "^18.3.12",
+    "copyfiles": "^2.4.1",
+    "typedoc": "^0.26.11",
+    "typescript": "^5.6.3"
+  }
+}

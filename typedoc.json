@@ -1,0 +1,17 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src/index.ts"],
+  "out": "docs",
+  "name": "Streaming Availability React Components",
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": false,
+    "includeFolders": false
+  },
+  "navigationLinks": {
+    "Streaming Availability API": "https://www.movieofthenight.com/about/api"
+  },
+  "defaultCategory": "Others",
+  "categoryOrder": ["Components", "Sources", "Others"],
+  "treatWarningsAsErrors": true
+}
