@@ -78,14 +78,12 @@ import { Grid, newFilteredSearchSource } from 'react-streaming-availability';
 export default function MyComponent() {
 	return (
 		<Grid
-			source={
-				newFilteredSearchSource({
-					country: "us",
-					orderBy: "popularity_1year",
-					orderDirection: "desc",
-					limit: 100,
-				})
-			}
+			source={newFilteredSearchSource({
+				country: "us",
+				orderBy: "popularity_1year",
+				orderDirection: "desc",
+				limit: 100,
+			})}
 		/>
 	);
 }

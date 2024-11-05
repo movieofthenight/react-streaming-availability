@@ -1,6 +1,6 @@
 {
   "name": "react-streaming-availability",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "A React component library to display streaming availability data for movies and TV shows including deep links",
   "homepage": "https://github.com/movieofthenight/react-streaming-availability",
   "bugs": {
@@ -12,6 +12,13 @@
   },
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "/dist",
+    "/LICENSE",
+    "/package.json",
+    "/package-lock.json",
+    "/README.md"
+  ],
   "type": "module",
   "repository": "github:movieofthenight/react-streaming-availability",
   "scripts": {
@@ -24,9 +31,6 @@
     "clsx": "^2.1.1",
     "server-only": "^0.0.1",
     "streaming-availability": "^4.4.0"
-  },
-  "peerDependencies": {
-    "react": ">=18"
   },
   "devDependencies": {
     "@types/node": "^22.8.4",

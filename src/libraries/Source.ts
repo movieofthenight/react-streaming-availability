@@ -175,7 +175,7 @@ export class IdSetSourceFetcher implements SourceFetcher {
 	constructor(private props: IdSetSourceProps) {}
 
 	async fetch(): Promise<SourceItem | undefined> {
-		const id = this.props.ids.pop();
+		const id = this.props.ids.shift();
 		if (!id) {
 			return undefined;
 		}
