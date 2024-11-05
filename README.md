@@ -88,3 +88,7 @@ export default function MyComponent() {
 	);
 }
 ```
+
+## Guide
+
+You can find a detailed guide here: https://docs.movieofthenight.com/guide/widget
