@@ -345,6 +345,7 @@ export type TopShowsSourceProps = streamingAvailability.GetTopShowsRequest
  * Supported streaming services are
  * Netflix (`netflix`),
  * Amazon Prime Video (`prime`),
+ * Disney+ (`disney`),
  * Apple TV+ (`apple`),
  * and Max (`hbo`)
  *
