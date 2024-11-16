@@ -1,4 +1,4 @@
-import {Grid, newChangesSource, newFilteredSearchSource, newTopShowsSource, Row} from "react-streaming-availability";
+import {Grid, newFilteredSearchSource, newTopShowsSource, Row} from "react-streaming-availability";
 
 export default function Home() {
 	return (
@@ -6,33 +6,36 @@ export default function Home() {
 			<h1>Streaming Availability React Components Demo</h1>
 			<p>Click on the posters or logos to follow the deep links into streaming service apps.</p>
 			<Row
-				title="Apple TV+ Germany Top Shows Row with Vertical Posters"
+				title="Top 10 Series - Netflix US"
 				posterType="horizontal"
 				source={newTopShowsSource({
-					country: "de",
-					service: "apple",
+					country: "us",
+					service: "netflix",
+					showType: "series",
 				})} />
 			<Row
-				title="Netflix US Top 10 Series Row with Vertical Posters"
-				posterType="vertical"
+				title="Top 10 Movies & Series - Disney+ Germany"
+				posterType="horizontal"
 				source={newTopShowsSource({
-				country: "us",
-				showType: "series",
-				service: "netflix",
+				country: "de",
+				service: "disney",
 			})} />
 			<Row
-				title="Expiring Movies & Series in US"
-				posterType="horizontal"
-				source={newChangesSource({
+				title="Highest Rated Science Fiction Movies in United States"
+				posterType="vertical"
+				source={newFilteredSearchSource({
 					country: "us",
-					changeType: "expiring",
-					itemType: "show",
+					genres: ["scifi"],
+					showType: "movie",
+					orderBy: "rating",
+					orderDirection: "desc",
 				})} />
-			<h2>Popular Movies & Series in US</h2>
+			<h2>Popular Series in US This Year</h2>
 			<Grid source={
 				newFilteredSearchSource({
 					country: "us",
-					orderBy: "popularity_1month",
+					showType: "series",
+					orderBy: "popularity_1year",
 					orderDirection: "desc",
 					limit: 100,
 				})
