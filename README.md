@@ -15,6 +15,12 @@ with any framework that supports
 ["use server" directive](https://react.dev/reference/rsc/use-server)
 such as Next.js.
 
+## Demo
+
+https://github.com/user-attachments/assets/3abce0cb-087b-430b-aebc-df9790737f03
+
+Code available at: https://github.com/movieofthenight/react-streaming-availability/tree/main/demo/nextjs
+
 ## Getting Started
 
 ### API Key
